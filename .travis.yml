@@ -6,9 +6,9 @@ before_install:
  - echo "Running tests..."
  - docker build -t amsramarnath/docker-react -f Dockerfile.dev .
 
-script:
+#script:
  #- docker run amsramarnath/docker-react npm run test -- --coverage 
-  - docker run amsramarnath/docker-react npm start
+ #- docker run amsramarnath/docker-react npm run build
 
 deploy:
   provider: elasticbeanstalk
