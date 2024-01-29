@@ -8,7 +8,7 @@ before_install:
 
 script:
   - docker run -e CI=true amsramarnath/docker-react npm run test
-  #- docker run amsramarnath/docker-react npm run test -- --coverage 
+  #- docker run amsramarnath/docker-react npm run test -- --coverage
   #- docker run amsramarnath/docker-react npm run build
 
 deploy:
